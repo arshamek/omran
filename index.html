@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>عمران نگین طرح ایریک</title>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
@@ -11,59 +11,66 @@
             margin: 0;
             padding: 0;
             color: #ffffff;
-            
-            /* رنگ پس‌زمینه برای فضاهای خالی اطراف عکس */
             background-color: #0b111a; 
-            background-image: url('pinterest_1.jpg');
             
-            /* این دستور عکس را کامل و بدون بریدگی نشان می‌دهد */
-            background-size: contain; 
-            background-position: center;
+            /* عکس را خیلی کوچکتر کردیم و بردیم بالای صفحه */
+            background-image: url('pinterest_1.jpg');
+            background-size: auto 55vh; /* ارتفاع عکس فقط 55 درصد صفحه گوشی خواهد بود */
+            background-position: center 15px; 
             background-attachment: fixed;
             background-repeat: no-repeat;
             
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* چینش از بالا */
             min-height: 100vh;
         }
 
-        /* پنل شیشه‌ای باریک‌تر برای دیده شدن بیشتر عکس */
         .container {
-            background: rgba(0, 10, 20, 0.4);
-            backdrop-filter: blur(2px); /* تاری بسیار کم */
-            -webkit-backdrop-filter: blur(2px);
-            max-width: 650px; /* پنل جمع‌وجورتر شد */
-            margin: 40px 20px;
-            padding: 35px;
+            background: rgba(0, 10, 20, 0.8); /* تیره‌تر شد تا متن‌ها خواناتر شوند */
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            max-width: 550px;
+            width: 85%;
+            margin: 0 auto;
+            /* پنل را هل دادیم پایین تا روی صورت ساختمان را نپوشاند */
+            margin-top: 58vh; 
+            margin-bottom: 50px;
+            padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 3px solid #fce38a; /* یک نوار طلایی شیک بالای پنل */
         }
 
         h1 {
             color: #fce38a;
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin-top: 0;
             font-weight: 900;
-            text-shadow: 0 3px 8px rgba(0,0,0,0.9);
+        }
+
+        .subtitle {
+            text-align: center; 
+            font-size: 1rem; 
+            font-weight: bold; 
+            margin-bottom: 25px; 
+            color: #fce38a;
         }
 
         h2 {
             color: #fce38a;
-            border-bottom: 1px solid rgba(252, 227, 138, 0.4);
-            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(252, 227, 138, 0.3);
+            padding-bottom: 8px;
             margin-top: 30px;
-            font-size: 1.3rem;
-            text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+            font-size: 1.2rem;
         }
 
         p {
             line-height: 1.8;
-            font-size: 1.05rem;
-            color: #ffffff;
-            text-shadow: 0 2px 5px rgba(0,0,0,0.9);
+            font-size: 1rem;
+            color: #e2e8f0;
         }
 
         ul {
@@ -71,61 +78,58 @@
             padding: 0;
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 10px;
         }
 
         ul li {
-            background: rgba(0, 0, 0, 0.4);
-            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.07);
+            padding: 8px 12px;
             border-radius: 8px;
             border-right: 3px solid #fce38a;
-            flex: 1 1 calc(45% - 15px);
-            font-size: 0.95rem;
+            flex: 1 1 calc(50% - 15px);
+            font-size: 0.9rem;
             font-weight: 700;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
         }
 
         .contact-box {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.4);
             padding: 15px;
             border-radius: 12px;
             text-align: center;
             margin-top: 15px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.05);
         }
 
         .btn-group {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
+            gap: 12px;
+            margin-top: 25px;
             flex-wrap: wrap;
         }
 
         .btn {
             display: inline-block;
-            padding: 10px 25px;
+            padding: 10px 20px;
             background: linear-gradient(135deg, #d4af37, #aa801e);
             color: #fff;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+            font-size: 0.95rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
             transition: all 0.3s ease;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
         }
 
         .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+            transform: translateY(-2px);
             background: linear-gradient(135deg, #fce38a, #d4af37);
             color: #000;
-            text-shadow: none;
         }
         
         @media (max-width: 600px) {
             ul li { flex: 1 1 100%; }
-            .container { padding: 20px; margin: 15px; background: rgba(0, 10, 20, 0.5); }
+            .container { width: 88%; padding: 20px; margin-top: 55vh; }
         }
     </style>
 </head>
@@ -133,7 +137,7 @@
 
     <div class="container">
         <h1>شرکت عمران نگین طرح ایریک</h1>
-        <p style="text-align: center; font-size: 1.1rem; font-weight: bold; margin-bottom: 25px; color: #fce38a;">طراحی، نظارت و اجرای پروژه‌های عمرانی با متراژ بالا</p>
+        <p class="subtitle">طراحی، نظارت و اجرای پروژه‌های عمرانی با متراژ بالا</p>
         
         <section>
             <h2>درباره ما</h2>
