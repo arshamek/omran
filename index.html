@@ -13,10 +13,10 @@
             padding: 0;
             color: #ffffff;
             
-            /* تنظیمات جدید پس‌زمینه برای نمایش کامل عکس */
-            background-color: #1a1e24; 
+            /* تصویر به صورت تمام‌صفحه و پوستر-مانند */
+            background-color: #000; 
             background-image: url('pinterest_1.jpg');
-            background-size: contain; 
+            background-size: cover; 
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
@@ -27,40 +27,42 @@
             min-height: 100vh;
         }
 
-        /* افکت شیشه‌ای (Glassmorphism) برای پنل اصلی */
+        /* پنل بسیار شفاف برای دیده شدن کامل عکس معماری */
         .container {
-            background: rgba(15, 39, 71, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            max-width: 800px;
+            background: rgba(0, 10, 20, 0.35); /* شفافیت بسیار بالا */
+            backdrop-filter: blur(4px); /* تاری بسیار کم برای نمایان شدن عکس */
+            -webkit-backdrop-filter: blur(4px);
+            max-width: 750px;
             margin: 40px 20px;
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.15);
         }
 
         h1 {
-            color: #e3bc64;
+            color: #fce38a;
             text-align: center;
             font-size: 2.2rem;
             margin-top: 0;
             font-weight: 900;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 0 3px 8px rgba(0,0,0,0.9); /* سایه قوی برای خوانایی */
         }
 
         h2 {
-            color: #e3bc64;
-            border-bottom: 2px solid rgba(227, 188, 100, 0.3);
+            color: #fce38a;
+            border-bottom: 1px solid rgba(252, 227, 138, 0.4);
             padding-bottom: 10px;
             margin-top: 35px;
             font-size: 1.4rem;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.9);
         }
 
         p {
             line-height: 2;
             font-size: 1.1rem;
-            color: #e2e8f0;
+            color: #ffffff;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.9); /* خوانایی متن روی عکس */
         }
 
         ul {
@@ -71,53 +73,58 @@
             gap: 15px;
         }
 
-        /* استایل لیست خدمات */
+        /* استایل لیست خدمات بسیار شفاف */
         ul li {
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(0, 0, 0, 0.4);
             padding: 10px 20px;
             border-radius: 8px;
-            border-right: 4px solid #e3bc64;
+            border-right: 3px solid #fce38a;
             flex: 1 1 calc(45% - 20px);
             font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
         }
 
         .contact-box {
-            background: rgba(0, 0, 0, 0.25);
+            background: rgba(0, 0, 0, 0.45);
             padding: 20px;
             border-radius: 12px;
             text-align: center;
             margin-top: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .btn-group {
             display: flex;
             justify-content: center;
             gap: 15px;
-            margin-top: 30px;
+            margin-top: 35px;
             flex-wrap: wrap;
         }
 
         .btn {
             display: inline-block;
             padding: 12px 28px;
-            background: linear-gradient(135deg, #c89b3c, #a87b27);
+            background: linear-gradient(135deg, #d4af37, #aa801e);
             color: #fff;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            box-shadow: 0 4px 15px rgba(200, 155, 60, 0.4);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
             transition: all 0.3s ease;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
         }
 
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(200, 155, 60, 0.6);
-            background: linear-gradient(135deg, #e3bc64, #c89b3c);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+            background: linear-gradient(135deg, #fce38a, #d4af37);
+            color: #000;
+            text-shadow: none;
         }
         
         @media (max-width: 600px) {
             ul li { flex: 1 1 100%; }
-            .container { padding: 25px; margin: 20px; }
+            .container { padding: 25px; margin: 20px; background: rgba(0, 10, 20, 0.45); }
         }
     </style>
 </head>
@@ -125,7 +132,7 @@
 
     <div class="container">
         <h1>شرکت عمران نگین طرح ایریک</h1>
-        <p style="text-align: center; font-size: 1.2rem; font-weight: bold; margin-bottom: 30px;">طراحی، نظارت و اجرای پروژه‌های عمرانی با متراژ بالا</p>
+        <p style="text-align: center; font-size: 1.2rem; font-weight: bold; margin-bottom: 30px; color: #fce38a;">طراحی، نظارت و اجرای پروژه‌های عمرانی با متراژ بالا</p>
         
         <section>
             <h2>درباره ما</h2>
