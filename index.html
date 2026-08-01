@@ -1,30 +1,156 @@
-<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>عمران نگین طرح ایریک</title>
-<style>
-body{font-family:Tahoma,sans-serif;background:#f4f6f8;margin:0;color:#1f2937}
-header{background:#0f2747;color:#fff;padding:40px;text-align:center}
-section{max-width:900px;margin:20px auto;background:#fff;padding:24px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
-.btn{display:inline-block;margin:8px;padding:12px 18px;background:#c89b3c;color:#fff;text-decoration:none;border-radius:8px}
-ul{line-height:2}
-</style></head><body>
-<header><h1>شرکت عمران نگین طرح ایریک</h1>
-<p>طراحی، نظارت و اجرای پروژه‌های عمرانی با متراژ بالا</p></header>
-<section><h2>درباره ما</h2>
-<p>شرکت عمران نگین طرح ایریک با تکیه بر دانش فنی و تجربه اجرایی، آماده ارائه خدمات طراحی، نظارت و اجرای پروژه‌های ساختمانی و عمرانی، اجرای پروژه‌ها در سطح استان و اجرای پروژه‌های مسکن ملی است.</p>
-<h2>خدمات</h2>
-<ul>
-<li>طراحی معماری</li>
-<li>طراحی سازه</li>
-<li>طراحی برق</li>
-<li>طراحی مکانیک</li>
-<li>نظارت فنی</li>
-<li>اجرای پروژه‌های ساختمانی</li>
-<li>مشاوره و مدیریت پروژه</li>
-</ul>
-<h2>تماس</h2>
-<p>09133108159<br>09131050580<br>09133104255</p>
-<p>اصفهان، خیابان کاوه، خیابان فلاطوری، چهارراه آل محمد، ساختمان آترین، طبقه سوم</p>
-<a class="btn" href="https://www.google.com/maps?q=32.702833,51.683278">📍 مشاهده لوکیشن</a>
-<a class="btn" href="tel:09133108159">📞 تماس</a>
-</section></body></html>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>عمران نگین طرح ایریک</title>
+    <!-- اضافه کردن فونت زیبای وزیرمتن -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Vazirmatn', Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            /* تنظیم پس‌زمینه */
+            background-image: url('pinterest_1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* افکت شیشه‌ای (Glassmorphism) برای پنل اصلی */
+        .container {
+            background: rgba(15, 39, 71, 0.85); /* رنگ سرمه‌ای سازمانی شما با شفافیت */
+            backdrop-filter: blur(12px); /* تار کردن بک‌گراند پشت پنل */
+            -webkit-backdrop-filter: blur(12px);
+            max-width: 800px;
+            margin: 40px 20px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            color: #e3bc64;
+            text-align: center;
+            font-size: 2.2rem;
+            margin-top: 0;
+            font-weight: 900;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: #e3bc64;
+            border-bottom: 2px solid rgba(227, 188, 100, 0.3);
+            padding-bottom: 10px;
+            margin-top: 35px;
+            font-size: 1.4rem;
+        }
+
+        p {
+            line-height: 2;
+            font-size: 1.1rem;
+            color: #e2e8f0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* استایل جدید و باکلاس برای لیست خدمات */
+        ul li {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 10px 20px;
+            border-radius: 8px;
+            border-right: 4px solid #e3bc64;
+            flex: 1 1 calc(45% - 20px);
+            font-weight: 700;
+        }
+
+        .contact-box {
+            background: rgba(0, 0, 0, 0.25);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: linear-gradient(135deg, #c89b3c, #a87b27);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px; /* دکمه‌های بیضی و مدرن */
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(200, 155, 60, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(200, 155, 60, 0.6);
+            background: linear-gradient(135deg, #e3bc64, #c89b3c);
+        }
+        
+        @media (max-width: 600px) {
+            ul li { flex: 1 1 100%; }
+            .container { padding: 25px; margin: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>شرکت عمران نگین طرح ایریک</h1>
+        <p style="text-align: center; font-size: 1.2rem; font-weight: bold; margin-bottom: 30px;">طراحی، نظارت و اجرای پروژه‌های عمرانی با متراژ بالا</p>
+        
+        <section>
+            <h2>درباره ما</h2>
+            <p>شرکت عمران نگین طرح ایریک با تکیه بر دانش فنی و تجربه اجرایی، آماده ارائه خدمات طراحی، نظارت و اجرای پروژه‌های ساختمانی و عمرانی، اجرای پروژه‌ها در سطح استان و اجرای پروژه‌های مسکن ملی است.</p>
+            
+            <h2>خدمات مهندسی</h2>
+            <ul>
+                <li>طراحی معماری</li>
+                <li>طراحی سازه</li>
+                <li>طراحی برق</li>
+                <li>طراحی مکانیک</li>
+                <li>نظارت فنی</li>
+                <li>اجرای پروژه‌های ساختمانی</li>
+                <li>مشاوره و مدیریت پروژه</li>
+            </ul>
+            
+            <h2>اطلاعات تماس</h2>
+            <div class="contact-box">
+                <p><strong>تلفن‌های تماس:</strong><br><br>
+                📞 09133108159 &nbsp;|&nbsp; 📞 09131050580 &nbsp;|&nbsp; 📞 09133104255</p>
+                <p><strong>آدرس:</strong><br> اصفهان، خیابان کاوه، خیابان فلاطوری، چهارراه آل محمد، ساختمان آترین، طبقه سوم</p>
+            </div>
+            
+            <div class="btn-group">
+                <a class="btn" href="https://www.google.com/maps?q=32.702833,51.683278">📍 مسیریابی روی نقشه</a>
+                <a class="btn" href="tel:09133108159">📞 تماس مستقیم</a>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
