@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>عمران نگین طرح ایریک</title>
-    <!-- اضافه کردن فونت زیبای وزیرمتن -->
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
         body {
@@ -13,10 +12,12 @@
             padding: 0;
             color: #ffffff;
             
-            /* تصویر به صورت تمام‌صفحه و پوستر-مانند */
-            background-color: #000; 
+            /* رنگ پس‌زمینه برای فضاهای خالی اطراف عکس */
+            background-color: #0b111a; 
             background-image: url('pinterest_1.jpg');
-            background-size: cover; 
+            
+            /* این دستور عکس را کامل و بدون بریدگی نشان می‌دهد */
+            background-size: contain; 
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
@@ -27,14 +28,14 @@
             min-height: 100vh;
         }
 
-        /* پنل بسیار شفاف برای دیده شدن کامل عکس معماری */
+        /* پنل شیشه‌ای باریک‌تر برای دیده شدن بیشتر عکس */
         .container {
-            background: rgba(0, 10, 20, 0.35); /* شفافیت بسیار بالا */
-            backdrop-filter: blur(4px); /* تاری بسیار کم برای نمایان شدن عکس */
-            -webkit-backdrop-filter: blur(4px);
-            max-width: 750px;
+            background: rgba(0, 10, 20, 0.4);
+            backdrop-filter: blur(2px); /* تاری بسیار کم */
+            -webkit-backdrop-filter: blur(2px);
+            max-width: 650px; /* پنل جمع‌وجورتر شد */
             margin: 40px 20px;
-            padding: 40px;
+            padding: 35px;
             border-radius: 20px;
             box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
             border: 1px solid rgba(255, 255, 255, 0.15);
@@ -43,26 +44,26 @@
         h1 {
             color: #fce38a;
             text-align: center;
-            font-size: 2.2rem;
+            font-size: 2rem;
             margin-top: 0;
             font-weight: 900;
-            text-shadow: 0 3px 8px rgba(0,0,0,0.9); /* سایه قوی برای خوانایی */
+            text-shadow: 0 3px 8px rgba(0,0,0,0.9);
         }
 
         h2 {
             color: #fce38a;
             border-bottom: 1px solid rgba(252, 227, 138, 0.4);
             padding-bottom: 10px;
-            margin-top: 35px;
-            font-size: 1.4rem;
+            margin-top: 30px;
+            font-size: 1.3rem;
             text-shadow: 0 2px 6px rgba(0,0,0,0.9);
         }
 
         p {
-            line-height: 2;
-            font-size: 1.1rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
             color: #ffffff;
-            text-shadow: 0 2px 5px rgba(0,0,0,0.9); /* خوانایی متن روی عکس */
+            text-shadow: 0 2px 5px rgba(0,0,0,0.9);
         }
 
         ul {
@@ -70,26 +71,26 @@
             padding: 0;
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 12px;
         }
 
-        /* استایل لیست خدمات بسیار شفاف */
         ul li {
             background: rgba(0, 0, 0, 0.4);
-            padding: 10px 20px;
+            padding: 8px 15px;
             border-radius: 8px;
             border-right: 3px solid #fce38a;
-            flex: 1 1 calc(45% - 20px);
+            flex: 1 1 calc(45% - 15px);
+            font-size: 0.95rem;
             font-weight: 700;
             text-shadow: 0 2px 4px rgba(0,0,0,0.8);
         }
 
         .contact-box {
-            background: rgba(0, 0, 0, 0.45);
-            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
             border-radius: 12px;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 15px;
             border: 1px solid rgba(255,255,255,0.1);
         }
 
@@ -97,13 +98,13 @@
             display: flex;
             justify-content: center;
             gap: 15px;
-            margin-top: 35px;
+            margin-top: 30px;
             flex-wrap: wrap;
         }
 
         .btn {
             display: inline-block;
-            padding: 12px 28px;
+            padding: 10px 25px;
             background: linear-gradient(135deg, #d4af37, #aa801e);
             color: #fff;
             text-decoration: none;
@@ -124,7 +125,7 @@
         
         @media (max-width: 600px) {
             ul li { flex: 1 1 100%; }
-            .container { padding: 25px; margin: 20px; background: rgba(0, 10, 20, 0.45); }
+            .container { padding: 20px; margin: 15px; background: rgba(0, 10, 20, 0.5); }
         }
     </style>
 </head>
@@ -132,7 +133,7 @@
 
     <div class="container">
         <h1>شرکت عمران نگین طرح ایریک</h1>
-        <p style="text-align: center; font-size: 1.2rem; font-weight: bold; margin-bottom: 30px; color: #fce38a;">طراحی، نظارت و اجرای پروژه‌های عمرانی با متراژ بالا</p>
+        <p style="text-align: center; font-size: 1.1rem; font-weight: bold; margin-bottom: 25px; color: #fce38a;">طراحی، نظارت و اجرای پروژه‌های عمرانی با متراژ بالا</p>
         
         <section>
             <h2>درباره ما</h2>
