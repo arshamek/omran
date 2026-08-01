@@ -12,11 +12,15 @@
             margin: 0;
             padding: 0;
             color: #ffffff;
-            /* تنظیم پس‌زمینه */
+            
+            /* تنظیمات جدید پس‌زمینه برای نمایش کامل عکس */
+            background-color: #1a1e24; 
             background-image: url('pinterest_1.jpg');
-            background-size: cover;
+            background-size: contain; 
             background-position: center;
             background-attachment: fixed;
+            background-repeat: no-repeat;
+            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,8 +29,8 @@
 
         /* افکت شیشه‌ای (Glassmorphism) برای پنل اصلی */
         .container {
-            background: rgba(15, 39, 71, 0.85); /* رنگ سرمه‌ای سازمانی شما با شفافیت */
-            backdrop-filter: blur(12px); /* تار کردن بک‌گراند پشت پنل */
+            background: rgba(15, 39, 71, 0.85);
+            backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             max-width: 800px;
             margin: 40px 20px;
@@ -67,7 +71,7 @@
             gap: 15px;
         }
 
-        /* استایل جدید و باکلاس برای لیست خدمات */
+        /* استایل لیست خدمات */
         ul li {
             background: rgba(255, 255, 255, 0.08);
             padding: 10px 20px;
@@ -99,7 +103,7 @@
             background: linear-gradient(135deg, #c89b3c, #a87b27);
             color: #fff;
             text-decoration: none;
-            border-radius: 50px; /* دکمه‌های بیضی و مدرن */
+            border-radius: 50px;
             font-weight: bold;
             box-shadow: 0 4px 15px rgba(200, 155, 60, 0.4);
             transition: all 0.3s ease;
