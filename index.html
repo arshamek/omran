@@ -13,34 +13,33 @@
             color: #ffffff;
             background-color: #0b111a; 
             
-            /* عکس را خیلی کوچکتر کردیم و بردیم بالای صفحه */
+            /* تنظیمات عکس پس‌زمینه */
             background-image: url('pinterest_1.jpg');
-            background-size: auto 55vh; /* ارتفاع عکس فقط 55 درصد صفحه گوشی خواهد بود */
+            background-size: auto 55vh; 
             background-position: center 15px; 
             background-attachment: fixed;
             background-repeat: no-repeat;
             
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* چینش از بالا */
+            align-items: flex-start; 
             min-height: 100vh;
         }
 
         .container {
-            background: rgba(0, 10, 20, 0.8); /* تیره‌تر شد تا متن‌ها خواناتر شوند */
+            background: rgba(0, 10, 20, 0.8); 
             backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
             max-width: 550px;
             width: 85%;
             margin: 0 auto;
-            /* پنل را هل دادیم پایین تا روی صورت ساختمان را نپوشاند */
             margin-top: 58vh; 
             margin-bottom: 50px;
             padding: 30px;
             border-radius: 20px;
             box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.8);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            border-top: 3px solid #fce38a; /* یک نوار طلایی شیک بالای پنل */
+            border-top: 3px solid #fce38a;
         }
 
         h1 {
@@ -71,6 +70,16 @@
             line-height: 1.8;
             font-size: 1rem;
             color: #e2e8f0;
+        }
+
+        /* استایل باکس اعتبارنامه */
+        .credential-box {
+            background: rgba(252, 227, 138, 0.08);
+            border-right: 3px solid #fce38a;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
         }
 
         ul {
@@ -142,6 +151,11 @@
         <section>
             <h2>درباره ما</h2>
             <p>شرکت عمران نگین طرح ایریک با تکیه بر دانش فنی و تجربه اجرایی، آماده ارائه خدمات طراحی، نظارت و اجرای پروژه‌های ساختمانی و عمرانی، اجرای پروژه‌ها در سطح استان و اجرای پروژه‌های مسکن ملی است.</p>
+            
+            <!-- باکس جدید اعتبارنامه حقوقی -->
+            <div class="credential-box">
+                <strong style="color: #fce38a; font-size: 0.95rem;">✔️ دارای پایه دو حقوقی تایید در نظام مهندسی و اداره راه و مسکن کشور</strong>
+            </div>
             
             <h2>خدمات مهندسی</h2>
             <ul>
